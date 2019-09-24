@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta content="text/html; charset="utf-8">
+		<title>Cadastramento dos dados</title>
+	</head>
+	<body>
+		<img src="imagens/salvador.jpg" alt="salvador" width=975 height=300>
+		<form id="cadastro" action="http://www.unijorge.edu.br/" method="post">
+		<table border="1">
+			<tr>
+				<th colspan="4" align="center"><h2>Cadastramento de dados básicos dos usuários de Salvador - Bahia</h2></th>
+			</tr>
+			<tr>
+				<td colspan="4" align="center"><h4>Informações pessoais</h4></td>
+			</tr>
+			<tr>
+				<td align="right">Nome Completo:</td>
+				<td align="left" colspan="3"><input type="text" size="100" name="nome" maxlength="70" required></td>
+			</tr>
+			<tr>
+				<td align="right">CPF:</td>
+				<td align="left" colspan="3"><input type="text" maxlength="14" size="20" name="cpf" placeholder="Ex.: 000.000.000-00" required></td>
+			</tr>
+			<tr>
+				<td align="right">Sexo:</td>
+				<td align="center"><input type="radio" name="sexo" value="f"> Feminino</td>
+				<td align="center"><input type="radio" name="sexo" value="m"> Masculino</td>
+				<td align="center"><input type="radio" name="sexo" value="o"> Outro</td>
+			</tr>
+			<tr>
+				<td align="right">Endereço:</td>
+				<td align="left" colspan="3"><input type="text" size="100" name="endereco" placeholder="Rua, Numero, Bairro"></td>
+			</tr>
+			<tr>
+				<td align="right">CEP:</td>
+				<td align="left" colspan="3"><input type="text" maxlength="10" size="20" name="cep" placeholder="Ex.: 00.000-000"></td>
+			</tr>
+			<tr>
+				<td align="right">Telefone Celular:</td>
+				<td align="left" colspan="3"><input type="tel" maxlength="16" size="20" name="telefone_celular" placeholder="Ex.: (71) 9 0000-0000"></td>
+			</tr>
+			<tr>
+				<td align="right">Naturalidade:</td>
+				<td align="left" colspan="3"><input type="text" size="100" name="naturalidade" placeholder="Cidade de nascimento"></td>
+			</tr>
+			<tr>
+				<td align="right">Data de nascimento:</td>
+				<td align="left" colspan="3"><input type="date" name="data_de_nascimento" min="1900-12-31" max="2019-12-31"></td>
+			</tr>
+			<tr>
+				<td align="right">Nome da Mãe:</td>
+				<td align="left" colspan="3"><input type="text" size="100" name="nome_da_mae" maxlength="70" required></td>
+			</tr>
+			<tr>
+				<td align="right">Quantas pessoas moram com você?</td>
+				<td align="left" colspan="3"><input type="number" name="quantidade" min="0" max="10" step="1"></td>
+			</tr>
+			<tr>
+				<td align="right">E-mail:</td>
+				<td align="left" colspan="3"><input type="email" name="email"autocomplete="on" placeholder="seuemail@hotmail.com"required></td>
+			</tr>
+			<tr>
+				<td align="right">Anexe sua foto:</td>
+				<td align="left" colspan="3"><input type="file" name="Anexe_sua_foto"></td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center"><h4>Informações profissionais</h4></td>
+			</tr>
+			<tr rowspan="2">
+				<td align="right">Escolaridade:</td>
+				<td align="center" colspan="2">
+				<select name="nivelescolar" size="3">
+				<option value="1">Ensino Fundamental</option>
+				<option value="2"> Ensino Médio</option>
+				<option value="3">Ensino Superior</option>
+				<option value="4">Pós-Graduação</option>
+				<option value="5">Mestrado</option>
+				<option value="6">Doutorado</option>
+				<option value="7">Pós-Doutorado</option>
+				</select></td>
+				<td align="center">
+				<input type="radio" name="situacao" value="1" checked>Completo<br>
+				<input type="radio" name="situacao" value="2">Incompleto</td>
+			</tr>
+			<tr>
+				<td align="right">Profissão:</td>
+				<td align="left" colspan="3"><input type="text" size="100" name="profissao" maxlength="70"></td>
+			</tr>
+			<tr>
+				<td align="right">Área de atuação:</td>
+				<td align="left" colspan="3"><input type="text" size="100" name="area_de_atuacao" maxlength="70"></td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center"><h4>Informações diversas</h4></td>
+			</tr>
+			
+			<tr>
+				<td align="right">Quais seus hobbies preferidos?</td>
+				<td align="center" colspan="3">
+				<input type="checkbox" name="hobby" value="i">Ler<br>
+				<input type="checkbox" name="hobby" value="b">Correr<br>
+				<input type="checkbox" name="hobby" value="p">Mergulhar <br>
+				<input type="checkbox" name="hobby" value="p">Cozinhar<br>
+				<input type="checkbox" name="hobby" value="p">Dançar <br>
+				<input type="checkbox" name="hobby" value="p">Meditar<br>
+				<input type="checkbox" name="hobby"value="verde">Escrever<br>
+				<input type="checkbox" name="hobby"value="azul">Artes marciais<br>
+				<input type="checkbox" name="hobby"value="preto">Jogar paintball<br>
+				<input type="checkbox" name="hobby"value="preto">Instrumentos musicais
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Qual o seu time de preferencia?</td>
+				<td align="center" colspan="3">
+				<input type="radio" name="time"value="vitoria">Vitoria<br>
+				<input type="radio" name="time"value="bahia">Bahia<br>
+				<input type="radio" name="time"value="vasco"checked>Outros<br>
+				<input type="hidden" name="id">
+			</tr>
+			<tr>
+				<td align="right">Quais suas principais dificuldades?</td>
+				<td align="center" colspan="3">
+				<textarea name="justificativa" rows="5" cols="50" placeholder="Digite aqui..."></textarea>
+			</td>
+			<tr>
+				<td align="right">Criar usuários:</td>
+				<td align="left" colspan="3"><input type="text" name="criar_usuarios" maxlength="20" size="50" placeholder="Maior que 6 letras" required></td>
+			</tr>
+			<tr>
+				<td align="right">Criar senha:</td>
+				<td align="left" colspan="3"><input type="password" name="criar_senha" maxlength="20" size="50" placeholder="Maior que 6 letras, maiúsculas e minúsculas" required></td>
+			</tr>
+			<tr>
+				<td align="right">Confirmar senha:</td>
+				<td align="left" colspan="3"><input type="password" name="confirmar_senha" maxlength="20" size="50" placeholder="Maior que 6 letras, maiúsculas e minúsculas" required></td>
+			</tr>
+			<tr>
+				<td align="right">Nota da Pesquisa:</td>
+				<td align="center" colspan="3"><input type="range" list="tickmarks" name="quantidade">
+				<datalist id="tickmarks">
+				<option value="0" label="0%">
+				<option value="10">
+				<option value="20">
+				<option value="30">
+				<option value="40">
+				<option value="50" label="50%">
+				<option value="60">
+				<option value="70">
+				<option value="80">
+				<option value="90">
+				<option value="100" label="100%">
+				</datalist>
+			</tr>		
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+				<td colspan="2" align="center"><input type="reset" value="Limpar"></td>
+			</tr>
+		</form>
+	</body>
+</html>
